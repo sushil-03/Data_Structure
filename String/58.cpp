@@ -7,7 +7,7 @@ int main(){
     for(int i=0;i<str.length();i++){
         map[str[i]]++;
     }
-    for(auto it:map){
+    for(auto it:map){//
         if(it.second >1){
             cout<<it.first<<" "<<it.second<<endl;
         }
