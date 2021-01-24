@@ -25,6 +25,7 @@ void Solve(string s){
     l=i-1;
     h=i+1;
     while(l>=0&&h<s.length() &&s[l]==s[h]){
+        // odd substring7
         if(h-l+1>end){
             start =l;
             end =h-l+1;
