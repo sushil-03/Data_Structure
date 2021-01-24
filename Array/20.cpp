@@ -27,14 +27,14 @@ void nextPer(vector<int>& arr){
 }
 int main(){
     vector<int> arr;
-    for(int i =0;i<3;i++){
+    for(int i =0;i<6;i++){
         int n;cin>>n;
         arr.push_back(n);
     }
     nextPer(arr);
-     for(int i =0;i<3;i++){
+     for(int i =0;i<6;i++){
         cout<<arr[i]<<" ";
-        
+        //1, 2, 3, 6, 5, 4
     }
     return 0;
 }
