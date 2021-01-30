@@ -22,7 +22,7 @@ string  getAnswer(vector<string> seq){
         return it->first;
         // cout<<it->first;
     }
-return 0
+return 0;
 }
 int main(){
     vector<string>strs;
