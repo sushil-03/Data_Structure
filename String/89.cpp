@@ -1,3 +1,4 @@
+//No two adjacent character lie with each other
 #include<bits/stdc++.h>
 using namespace std;
 int main(){

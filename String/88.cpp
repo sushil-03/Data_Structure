@@ -19,12 +19,12 @@ int main(){
         m[str[j]]++;
         j++;
         }
-        else if(count ==n){
-            ans =min(ans,j-i);
-            if(m[str[i]]==1) count--;
-            m[str[i]]--;
-            i++;
-        }
+        // else if(count ==n){
+        //     ans =min(ans,j-i);
+        //     if(m[str[i]]==1) count--;
+        //     m[str[i]]--;
+        //     i++;
+        // }
         while(count==n){
 
             ans =min(ans,j-i);

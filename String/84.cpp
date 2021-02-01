@@ -1,4 +1,4 @@
-//First repeated  word in a string
+//Second repeated  word in a string
 #include<bits/stdc++.h>
 using namespace std;
 string  getAnswer(vector<string> seq){
