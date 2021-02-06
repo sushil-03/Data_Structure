@@ -1,7 +1,7 @@
 // Time complexity o[n*n]
-
 // #include<iostream>
-// using namespace std;
+
+
 // int main()
 // {
 //     int arr[]={1,2,5,2,4,7,5,6,6,7,1};
