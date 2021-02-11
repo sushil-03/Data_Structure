@@ -1,26 +1,32 @@
+// C++ program to find number of customers who couldn't get a resource. 
 #include<bits/stdc++.h>
 using namespace std;
-int Solve(int n, string str){
-    int count=0;
-    unordered_map<char,int>m;
-    for(int i=0;i<str.length();i++){
-        if(count<=n){
-            if( (m[str[i]] == 0) ){
-                count++;
-                m[str[i]]=1;
+int Solve(int n,string seq){
+    int res;//result
+    char check[200]={0};
+    int occupied=0;
+    for(int i=0;i<seq.size();i++){
+        if(check[seq[i]]==0){
+            check[seq[i]]=1;
+            if(occupied<n){
+                occupied++;
+                check[seq[i]]=2;
             }
-            else{
-                count--;
-                m[str[i]]=0;
-            }
+            else
+            res++;
         }
-        if(count>n){
-            return 0;
+        else
+        {
+            if(check[seq[i]]==2){
+                occupied--;
+                check[seq[i]]=0;
+            }
+            check[seq[i]]=0;
         }
     }
-    return 1;
+    return res;
 }
 int main(){
-    cout<<Solve(1,"ABCBCADEED");
+    cout<<Solve(3,"GACCBGDDBAEE");
     return 0;
 }
