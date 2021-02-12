@@ -1,4 +1,4 @@
-// Aggressive cows Time complexity O(nlogn)g
+// Aggressive cows Time complexity O(nlogn)
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
