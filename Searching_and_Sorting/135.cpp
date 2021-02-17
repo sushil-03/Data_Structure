@@ -26,7 +26,7 @@ void merge(int a[],int temp[],int left,int right){
         merge(a,temp,left,mid);
         merge(a,temp,mid+1,right);
         mergesort(a,temp,left,mid+1,right);
-    // }
+
 }
 int main(){
     int arr[]={1,5,2,1,2,4};

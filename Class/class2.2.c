@@ -1,5 +1,5 @@
-/*Name :Sushil Rawat
-  Roll number :70
+/*Name :Amit Kumar
+  Roll number :11
   Program :Write a user defined function to check a number is perfect or not.*/  
 #include<stdio.h>
 #include<stdbool.h>
@@ -10,7 +10,7 @@ bool check_perfect(int n){
             sum +=i;
         }
     }
-    if(sum==n)
+    if(sum==n);
     return true;
     else
     return false;

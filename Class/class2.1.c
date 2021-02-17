@@ -1,5 +1,5 @@
-/*Name :Sushil Rawat
-  Roll number :70
+/*Name :Amit kumar
+  Roll number :11
   Program :Write a menu driven program to perform following operations using functions */  
 #include<stdio.h> 
 void Area_of_circle(){
