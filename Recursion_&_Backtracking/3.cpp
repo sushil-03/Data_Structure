@@ -8,7 +8,7 @@ void Solve(bool board[][n] , int row,bool cols[],bool ndiag[],bool rdiag[],strin
     
     if(row==n){
         cout<<anf<<"."  `1;
-        return;
+        return ;
     }
     for(int i=0;i<n;i++){
         if(cols[i]==false && ndiag[row+i]==false && rdiag[row-i+n-1]==false){
