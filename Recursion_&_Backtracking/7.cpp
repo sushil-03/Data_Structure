@@ -8,7 +8,8 @@ using namespace std;
 bool canPlacedHorizontally(char puzzle[][c],int i,int j,string word){
     if(j-1 >=0 && puzzle[i][j-1]!='+'){
         return false;
-    }else if(j+word.length()<c && puzzle[i][j+word.length()]!='+'){
+    }
+    else if(j+word.length()<c && puzzle[i][j+word.length()]!='+'){
         return false;
     }
     
