@@ -8,7 +8,7 @@ using namespace std;
 bool canPlacedHorizontally(char puzzle[][c],int i,int j,string word){
     if(j-1 >=0 && puzzle[i][j-1]!='+'){
         return false;
-    }else if(j+word.length()<r && puzzle[i][j+word.length()]!='+'){
+    }else if(j+word.length()<c && puzzle[i][j+word.length()]!='+'){
         return false;
     }
     
@@ -27,7 +27,7 @@ return true;
 bool canPlacedVertically(char puzzle[][c],int i,int j,string word){
     if(i-1>=0 && puzzle[i-1][j]!='+')
     return false;
-    else if(i+word.length()<c && puzzle[i+word.length()][j]!='+')
+    else if(i+word.length()<r && puzzle[i+word.length()][j]!='+')
     return false;
     else{
         for(int ii=0;ii<word.length();ii++){
@@ -54,7 +54,6 @@ bool* placeHorizontally(char puzzle[][c],int i,int j,string word,bool weplaced[]
     return weplaced;
 }
 bool placedVertically(char puzzle[][c],int i,int j,string word,bool weplaced[]){
-    // bool weplaced[word.length()]={0};
     for(int ii=0;ii<word.length();ii++){
         if(puzzle[i+ii][j]=='-'){
             puzzle[i+ii][j]=word[ii];
@@ -88,7 +87,6 @@ void print(char puzzle[][c]){
 }
 
 void Solve(char puzzle[][c],string str[],int idx,int n){
-//   int z=sizeof(str)/sizeof(str[0]);
     if(idx==n){
         print(puzzle);
         return;
@@ -113,8 +111,6 @@ void Solve(char puzzle[][c],string str[],int idx,int n){
         }
     }
 }
-
-
 
 int main(){
     char puzzle[r][c];
