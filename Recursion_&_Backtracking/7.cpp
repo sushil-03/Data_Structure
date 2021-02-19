@@ -1,7 +1,7 @@
 // Crossword Puzzle 
 #include<bits/stdc++.h>
-#define r 3
-#define c 3
+#define r 10
+#define c 10
 using namespace std;
 
 
@@ -127,3 +127,32 @@ int main(){
     }
     Solve(puzzle,word,0,n);
 }
+
+
+// +-++++++++ 
+// +-++++++++ 
+// +-++++-+++ 
+// +--+++--++ 
+// +-++++-+++ 
+// +-++++-+++ 
+// +-++++-+++ 
+// +-+------+ 
+// +-++++++++ 
+// +++-------
+
+// PUNJAB
+// JHARKHAND
+// MIZORAM 
+// MUMBAI
+
+
+// + J + + + + + + + + 
+// + H + + + + + + + + 
+// + A + + + + P + + + 
+// + R - + + + U - + + 
+// + K + + + + N + + + 
+// + H + + + + J + + + 
+// + A + + + + A + + + 
+// + N + M U M B A I + 
+// + D + + + + + + + + 
+// + + + M I Z O R A M
