@@ -1,5 +1,5 @@
 // Maximum Score Problem
-// To make a set in which the frequency of word should not be greater than given value
+// To make a set in which the frequency of word should not be greater than given frequency
 #include<bits/stdc++.h>
 using namespace std;
 int Solve(string str[],int score[],int freq[],int idx,int n){
