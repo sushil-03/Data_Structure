@@ -15,13 +15,13 @@ void Solve(bool board[][n],bool cols[],int row,bool ndiag[],bool rdiag[],int res
     }
     for(int i=0;i<n;i++){
         if(cols[i]==false && ndiag[row+i]==false && rdiag[row-i +n-1]==false){
-            board[row][i]=true;
+            // board[row][i]=true;
             cols[i]=true;
             ndiag[row+i]=true;
             rdiag[row -i+n-1]=true;
             res[row][i]=1;
             Solve(board,cols,row+1,ndiag,rdiag,res);
-            board[row][i]=false;
+            // board[row][i]=false;
             cols[i]=false;
            ndiag[row+i]=false;
             rdiag[row -i+n-1]=false;

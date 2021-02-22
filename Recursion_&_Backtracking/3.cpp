@@ -1,13 +1,13 @@
-/s//N Queen Problem using Backtracking(Branch and Bound)
+//N Queen Problem using Backtracking(Branch and Bound)
 //  place queen in position so that no queen intersect each other
 #include<bits/stdc++.h>
-#define n 8
+#define n 4
 using namespace std;
 
 void Solve(bool board[][n] , int row,bool cols[],bool ndiag[],bool rdiag[],string anf){
     
     if(row==n){
-        cout<<anf<<"."  `1;
+        cout<<anf<<".";
         return ;
     }
     for(int i=0;i<n;i++){
