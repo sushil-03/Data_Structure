@@ -22,7 +22,6 @@ void Solve(int i,int n,string s,string cur,string ans){
     return;
 }
 
-
 int main(){
     int dict;
     cin>>dict;
