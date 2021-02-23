@@ -3,7 +3,7 @@
 using namespace std;
 bool isValid(vector<vector<int> >&Sudoko,int i,int j,int val){
     for(int z=0;z<Sudoko.size();z++){
-        if(Sudoko[z][i]==val || Sudoko[j][z]==val)
+        if(Sudoko[i][z]==val || Sudoko[z][j]==val)
         return false;
     }
     int smi= i / 3 * 3;
