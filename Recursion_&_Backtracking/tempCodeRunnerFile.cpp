@@ -1,3 +1,2 @@
-s.size();i++){
-        cout<<ans[i]<<" ";
-    }
+
+    // int m=sizeof(matrix[0])/sizeof(matrix[0][0]);
