@@ -1,0 +1,2 @@
+ // node* random= removeInRandom(head);
+    
