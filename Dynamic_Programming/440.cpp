@@ -6,7 +6,7 @@ int Solve(int a[],int i,int j,int target){
     if(a[j]-a[i]<=target)
     return 0;
     if(dp[i][j]!=-1)return dp[i][j];
-
+// it can be removed from starting index or ending index and add 1
     return dp[i][j]=1+min(Solve(a,i+1,j,target),Solve(a,i,j-1,target)) ;
 }
 int main(){
