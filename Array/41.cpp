@@ -5,6 +5,7 @@ int main(){
     int ar1[]={2, 3, 5, 8};
     int ar2[]={10, 12, 14, 16, 18, 20};
     int n=sizeof(ar1)/sizeof(ar1[0]);
+    cout<<n;
     int m=sizeof(ar2)/sizeof(ar2[0]);
     int begin=0;
     int end=n;
@@ -21,10 +22,10 @@ int main(){
 
     if(max1<=min2 && max2 <=min1){
         if((m+n)%2==0){
-        cout<< (min(min1,min2)+max(max1,max2))/2;
+        // cout<< (min(min1,min2)+max(max1,max2))/2;
             return 0;
         }else{
-        cout<< (max(max1,max2));
+        // cout<< (max(max1,max2));
         return 0;
         }
     }
