@@ -9,7 +9,7 @@ Return true if s is a prefix string of words, or false otherwise.
 
 
 #include <bits/stdc++.h>
-using namespace std;sx
+using namespace std;
 
 bool isPrefixString(string s, vector<string>& words) {
         int n=s.length();
