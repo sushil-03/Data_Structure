@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+//Print subset of char array
+void helper(int n,string s){
+    int j=0;
+    while(n>0){
+        int last_bit=n&1;
+        if(last_bit==1){
+            cout<<s[j];
+        }
+        j++;
+        n=n>>1;
+    }
+    cout<<endl;
+    
+}
+void subset(string s){
+    int n=s.length();
+    for(int i=0;i<(1<<n);i++){
+        helper(i,s);
+    }
+}
+int main(){
+    string s;
+    cin>>s;
+    subset(s);
+}
